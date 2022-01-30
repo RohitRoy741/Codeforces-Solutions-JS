@@ -20,8 +20,8 @@ process.stdin.on("end", () => {
     countMax++;
   }
   if (flowers[0] === flowers[n - 1]) {
-    countMin = Math.ceil(countMin / 2);
-    countMax = Math.floor(countMax / 2);
+    console.log(0, (n * (n - 1)) / 2);
+    return;
   }
   console.log(difference, countMax * countMin);
 });
